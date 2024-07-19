@@ -1,0 +1,155 @@
+/* General Reset and Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5; /* Light beige background */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+header {
+    background: #004d40; /* Dark teal background */
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+header h1:hover {
+    color: #b2dfdb; /* Light teal on hover */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: #ffffff; /* White text color for navigation links */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+    padding: 5px 10px; /* Add some padding for better click area */
+}
+
+nav ul li a:hover {
+    color: #ffb74d; /* Gold color on hover */
+}
+
+/* Main Content */
+main {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    font: 300 60px 'Oswald', sans-serif;
+    color: #004d40;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.credits-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.credit-category {
+    margin-bottom: 20px;
+}
+
+.credit-category h3 {
+    border-bottom: 2px solid #004d40;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+a {
+    color: #004d40;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #004d40; /* Dark teal background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #ffb74d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+/* Media Queries */
+@media screen and (max-width: 850px) {
+    .credits-wrapper {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 569px) {
+    .credits-wrapper {
+        padding: 5px;
+    }
+}
